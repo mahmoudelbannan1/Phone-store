@@ -1,0 +1,38 @@
+<div style="margin-top: 100px; margin-bottom: 100px">
+  <div class="container text-center">
+    <h1>Our Products</h1>
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Product name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <th scope="row">{{ product?.id }}</th>
+          <td>{{ product?.name }}</td>
+          <td>{{ product?.price }}</td>
+          <td>{{ product?.quantity }}</td>
+          <td>
+            <i
+              [routerLink]="['/products', product.id, 'edit']"
+              class="bi bi-pencil-square mx-3 fs-3 text-info"
+            ></i>
+            <i
+              class="bi bi-trash mx-3 fs-3 text-danger"
+              (click)="deleteProduct(product.id)"
+            ></i>
+            <i
+              [routerLink]="['/products', product.id]"
+              class="bi bi-info-circle mx-3 fs-3 text-warning"
+            ></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

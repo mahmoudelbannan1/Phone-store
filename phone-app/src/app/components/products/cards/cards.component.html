@@ -1,0 +1,57 @@
+<div class="p-5">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let product of products; let i = index">
+        <div class="card" style="max-height: fit-content">
+          <img
+            src="{{ product.imgUrl }}"
+            class="card-img-top"
+            alt="..."
+            style="height: 400px"
+          />
+          <div class="card-body">
+            <h5 class="card-title fs-1">{{ product.name }}</h5>
+            price: {{ product.price }}
+
+            <p class="card-text">quantity : {{ product.quantity }}</p>
+
+            <div [ngSwitch]="product.quantity" style="text-align: center">
+              <button *ngSwitchCase="'0'" class="p-4 btn btn-danger">
+                Sold Out
+              </button>
+              <button
+                *ngSwitchCase="'1'"
+                class="p-4 btn btn-warning"
+                (click)="add(i)"
+              >
+                Add To Cart
+              </button>
+              <button
+                *ngSwitchDefault
+                class="p-4 btn btn-success"
+                (click)="add(i)"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let product of products">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          This is a longer card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+      </div>
+    </div>
+  </div>
+</div> -->

@@ -1,0 +1,20 @@
+<div
+  style="margin-top: 100px; margin-bottom: 100px"
+  class="bg-dark p-5 text-center text-light"
+>
+  <h1>product details</h1>
+  <div class="container">
+    <p>product Name :{{ product.name }}</p>
+    <p>product price :{{ product.price }}</p>
+    <p>product quantity :{{ product.quantity }}</p>
+    <div>
+      <i class="bi bi-star-fill text-warning"></i
+      ><i class="bi bi-star-fill text-warning"></i
+      ><i class="bi bi-star-fill text-warning"></i
+      ><i class="bi bi-star-fill text-warning"></i>
+    </div>
+    <button class="btn btn-outline-info mt-2" (click)="goToPoducts()">
+      Back to Products
+    </button>
+  </div>
+</div>

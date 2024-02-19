@@ -1,0 +1,47 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Redme",
+      "quantity": 5,
+      "price": 5000,
+      "imgUrl": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/42/856094/1.jpg?0585"
+    },
+    {
+      "id": "2",
+      "name": "Samsung",
+      "quantity": 10,
+      "price": 2000,
+      "imgUrl": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/54/762534/1.jpg?8696"
+    },
+    {
+      "id": "3",
+      "name": "Iphone",
+      "quantity": 0,
+      "price": 17000,
+      "imgUrl": "https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/apple/Apple-iPhone-15-Pro-Max/Blue-Titanium/Apple-iPhone-15-Pro-Max-Blue-Titanium-thumbnail.png"
+    },
+
+    {
+      "id": "4",
+      "name": "OPPO",
+      "quantity": 10,
+      "price": 2000,
+      "imgUrl": "https://m.media-amazon.com/images/I/51Vb6Yv5GwL._AC_SX679_.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Redmi",
+      "quantity": 0,
+      "price": 17000,
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh77oT43_C1ntVc3jqxaPJukWxuZKR55csLQ&usqp=CAU"
+    },
+    {
+      "id": "6",
+      "name": "Huawei",
+      "quantity": 0,
+      "price": 17000,
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKRXeP4xSG97QuItTbQYcH4jrpSCMD9UyAvw&usqp=CAU"
+    }
+  ]
+}
